@@ -1,0 +1,28 @@
+<div class="jumbotron text-center">
+    
+        
+  <div class="container-fluid">
+    <div>
+      
+       
+        <input type="text"  [(ngModel)]="username" id="mySearch" placeholder="Search.." title="Type in a category"><button (click)="search()" class="btn btn-primary">Search</button>
+       
+      </div><br>
+    <div class="row">
+      <div  class="col-sm-6" >
+        <img src="{{github.avatar_url}}" alt="">
+      </div>
+      <div class="well">
+      <div  *ngIf ="github" class="col-sm-6" id="identity">
+       
+        <h5 class="hello">Login:{{github?.login}}</h5>
+        <h5 class="hello">Name:{{ github?.name}}</h5>
+        <h5 class="hello">Bio:{{github?. bio}}</h5>
+        <h5 class="hello">Location:{{ github?.location}}</h5>
+        <h5 class="hello">Created:{{ github?.created_at|date}}</h5>
+        <a href="{{github.html_url}}" target="_blank"><button class="list-group-item list-group-item-action active">View them in profile</button></a>
+      </div>
+    </div>
+   </div>      
+  </div>
+  </div>

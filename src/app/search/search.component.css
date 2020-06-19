@@ -1,0 +1,46 @@
+.card {
+    border-radius: 0px;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1, h2, h4, h6, p {
+    text-align: center;
+}
+
+a {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titles{
+    text-decoration: underline;
+}
+
+#avatar {
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(187, 186, 186, 0.3)
+}
+
+fa-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#hostedIcon {
+    color: rgb(2, 142, 177);
+}
+
+#repoSection {
+    text-align: center;
+}
+
+#repoDiv {
+    margin-top: 20px;
+}
